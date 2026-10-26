@@ -1,11 +1,10 @@
-from pypdf import PdfMerger
+from PyPDF2 import PdfWriter
 
-pdfs = ['pdf1.pdf', 'dummy1.pdf']
+merger = PdfWriter()
 
-merger = PdfMerger()
-
-for pdf in pdfs:
+for i in range(0,3):
+    pdf=input("please enter the pdf file name: ")
     merger.append(pdf)
 
-merger.write("result.pdf")
+merger.write("merged-pdf.pdf")
 merger.close()
