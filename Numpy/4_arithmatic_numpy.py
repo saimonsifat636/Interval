@@ -32,7 +32,11 @@ print(arr1-arr2)
 print(arr1*arr2)
 print(arr2/arr1)
 
+
+
+
 #comparison operator:
+
 result=np.array([55,99,100,33,44,88,66,77,22])
 print("\n\ncomparison operator: \n")
 print(result==100)
